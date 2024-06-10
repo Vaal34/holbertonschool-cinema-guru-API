@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize').Sequelize;
 const sequelize = new Sequelize(
     process.env.DB_SCHEMA || 'postgres',
-    process.env.DB_USER || 'postgres',
-    process.env.DB_PASSWORD || '',
+    process.env.DB_USER || 'cinema',
+    process.env.DB_PASSWORD || 'root',
     {
         host: process.env.DB_HOST || 'localhost',
         port: process.env.DB_PORT || 5432,
